@@ -1,0 +1,13 @@
+{% extends "index.html" %}
+
+{% block content %}
+
+    {% if "инженер" in title %}
+    <h1>Инженерные тренажеры</h1>
+    {%elif "строитель" in title %}
+    <h1>Научные симуляторы</h1>
+    {% endif %}
+    <img src="{{path}}" alt="фото" width="500" height="500"/>
+
+
+{% endblock %}
